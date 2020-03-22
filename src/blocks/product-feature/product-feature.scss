@@ -1,0 +1,31 @@
+.product-feature {
+	/* 1 Positioning */
+
+	/* 2 Block model */
+	display: flex;
+	align-items: flex-start;
+	padding: 10px 25px;
+	width: 100%;
+	max-width: 273px;
+	box-sizing: border-box;
+
+	/* 3 Typography */
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 18px;
+	color: #3a3a3a;
+
+	/* 4 Visual */
+	background-color: #f7f6f9;
+	border-radius: 5px;
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+}
+.product-feature__img {
+	/* 2 Block model */
+	width: 33px;
+	flex: 0 0 33px;
+	padding-top: 2px;
+}

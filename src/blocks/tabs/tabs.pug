@@ -1,0 +1,20 @@
+div.tabs
+	ul.tabs__menu
+		li
+			a.tabs__menu-active(href="#tabs1") Покупка
+
+		li
+			a(href="#tabs2") возврат
+
+		li
+			a(href="#tabs3") доставка
+
+	ul.tabs__body
+		li.tabs__body-active(id="tabs1")
+			include ../accordion/accordion.pug
+
+		li(id="tabs2")
+			include ../accordion/accordion.pug
+
+		li(id="tabs3")
+			include ../accordion/accordion.pug

@@ -1,0 +1,135 @@
+.header__top {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 18px 0;
+}
+.header__menu-mobile {
+	/* 2 Block model */
+	display: none;
+}
+.header__menu-mobile--show {
+	/* 1 Positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+
+	/* 2 Block model */
+	display: block;
+
+	/* 4 Visual */
+	//opacity: 0;
+	background-color: #7e9978;
+
+	/* 5 Animation */
+	/* animation: header__menu-mobile-animation 0s linear;
+	  animation-iteration-count: 1;
+	  animation-fill-mode: forwards; */
+}
+.header__site-name {
+	/* 2 Block model */
+	display: none;
+
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		display: block;
+		flex-grow: 2;
+		padding-left: 30px;
+
+		/* 3 Typography */
+		font-size: 13px;
+		line-height: 14px;
+		color: #8f8f8f;
+	}
+}
+.header__contacts {
+	/* 2 Block model */
+	display: none;
+
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		display: flex;
+	}
+}
+.header__link {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	margin-right: 26px;
+
+	/* 3 Typography */
+	font-size: 11px;
+	line-height: 16px;
+	color: #A6C19C;
+	text-transform: uppercase;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+
+	@media(min-width: 1200px) {
+		/* 2 Block model */
+		margin-right: 62px;
+	}
+}
+.header__link:hover {
+	/* 4 Visual */
+	text-decoration: none;
+	opacity: 0.7;
+}
+.header__tel {
+	/* 3 Typography */
+	font-size: 21px;
+	line-height: 22px;
+
+	/* 4 Visual */
+	text-decoration: none;
+}
+.header__tel b {
+	/* 3 Typography */
+	font-weight: bold;
+	color: #000000;
+}
+
+.header__contacts img {
+	/* 2 Block model */
+	display: block;
+	margin-right: 11px;
+}
+.header__panel {
+	/* 2 Block model */
+	display: none;
+
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		display: block;
+	}
+}
+.header__hamburger {
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		display: none;
+	}
+}
+.header__bottom {
+	/* 2 Block model */
+	display: none;
+	padding-top: 12px;
+  padding-bottom: 25px;
+
+  @media(min-width: 992px) {
+  	/* 2 Block model */
+  	display: block;
+  }
+}
+@keyframes header__menu-mobile-animation {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+}

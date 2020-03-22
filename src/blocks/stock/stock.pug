@@ -1,0 +1,8 @@
+mixin stock(data)
+	a.stock(href="#")
+		div.stock__img
+			img(src="images/"+data.img alt="")
+
+		div.stock__body
+			div.stock__title!=data.title
+			div.stock__text!=data.text

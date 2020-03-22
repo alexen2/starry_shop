@@ -1,0 +1,92 @@
+.slider-testimonial {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	margin: 0 -23px;
+	padding: 30px 0 32px 0;
+
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		padding: 40px 0 70px 0;
+	}
+}
+.slider-testimonial__arrow-left {
+	/* 1 Positioning */
+	position: absolute;
+	top: -18px;
+	right: 68px;
+
+	/* 2 Block model */
+	display: none !important;
+	width: 9px;
+	height: 10px;
+
+	/* 4 Visual */
+	cursor: pointer;
+	background-image: url(../images/icon--arrow-left-small.png);
+
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		display: block !important;
+	}
+}
+.slider-testimonial__arrow-right {
+	/* 1 Positioning */
+	position: absolute;
+	top: -18px;
+	right: 38px;
+
+	/* 2 Block model */
+	display: none !important;
+	width: 9px;
+	height: 10px;
+
+	/* 4 Visual */
+	cursor: pointer;
+	background-image: url(../images/icon--arrow-right-small.png);
+
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		display: block !important;
+	}
+}
+.slider-testimonial__item {
+	/* 2 Block model */
+	padding: 0px 23px 0 23px;
+}
+.slider-testimonial .slick-dots {
+	/* 2 Block model */
+	width: 100%;
+	padding: 30px 0 0 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.slider-testimonial .slick-dots li button {
+	/* 2 Block model */  
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 7px;
+  
+  /* 3 Typography */
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+
+  /* 4 Visual */
+  cursor: pointer;
+  border: 0;  
+  outline: none;
+  background: #f7f6f9;
+  border-radius: 50%;
+}
+.slider-testimonial .slick-dots li.slick-active button {
+  /* 4 Visual */
+  border: 2px solid #a8c39f; 
+  background: none;
+}

@@ -1,0 +1,68 @@
+.accordion {
+	/* 2 Block model */	
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.accordion__item {	
+	/* 2 Block model */
+	margin-bottom: 15px;
+	padding: 0 25px 9px 25px;
+
+	/* 4 Visual */
+	border: 1px solid #d9d9d9;
+	border-radius: 8px;
+}
+.accordion__item:hover {
+	/* 4 Visual */
+	cursor: pointer;
+	opacity: 0.7;
+}
+.accordion__question {	
+	/* 2 Block model */
+	padding-top: 18px;
+	padding-bottom: 9px;
+
+	/* 3 Typography */
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 19px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+
+	/* 4 Visual */
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.accordion__answer {
+	/* 2 Block model */
+	display: none;
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+.accordion__answer .text {
+	/* 2 Block model */
+	margin-bottom: 15px;
+
+	/* 3 Typography */
+	font-size: 14px;
+	line-height: 17px;
+}
+.accordion__answer .text:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

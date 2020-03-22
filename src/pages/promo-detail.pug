@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Promo detail')
+
+	body
+		include ../blocks/mixins.pug
+
+		div.wrapper
+			include ../blocks/header/header.pug
+			
+			div.container
+				+breadcrumbs({
+					items: [
+						'Главная',
+						'Наручные часы Starry Flower Diamond'
+					]
+				})
+
+				h1.h2 При покупке 2 часов, в подарок часы
+
+				include ../blocks/promo-detail/promo-detail.pug		
+
+			div.container.container--sm-no-gutters
+				div.no-negative-margin
+					include ../blocks/get-consultation/get-consultation.pug
+
+			div.container.sm-hide
+				div.stock-list
+					div.stock-list__item
+						include ../blocks/promo-small/promo-small.pug
+
+					div.stock-list__item
+						include ../blocks/promo-small/promo-small.pug
+
+					div.stock-list__item
+						include ../blocks/promo-small/promo-small.pug
+	
+			include ../blocks/footer/footer.pug
+
+		include include/script.pug

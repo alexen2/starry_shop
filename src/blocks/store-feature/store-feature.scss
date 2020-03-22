@@ -1,0 +1,28 @@
+.store-feature {
+	/* 1 Positioning */
+
+	/* 2 Block model */
+	width: 100%;
+	max-width: 268px;
+	margin: 0 auto;
+
+	/* 3 Typography */
+	text-align: center;
+
+	/* 4 Visual */
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+}
+.store-feature__title {
+	/* 2 Block model */
+	padding-top: 6px;
+	padding-bottom: 7px;
+}
+.store-feature__text {
+	/* 3 Typography */
+	font-size: 14px;
+	line-height: 16px;
+	color: #575757;
+}

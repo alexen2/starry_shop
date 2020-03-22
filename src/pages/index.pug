@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Index - Starry Shop')
+
+	body
+		include ../blocks/mixins.pug
+		div.intro-page
+			div.container
+				div.row.justify-content-center
+					div.col-12.col-lg-6(style="width: 100%; max-width: 580px; margin: 0 auto;")
+						div.intro-page__top
+							h1.h1.center Starry Shop
+
+						ul.intro-page__list
+							li.intro-page__item
+								a(href="home.html" target="_blank") home
+
+							li.intro-page__item
+								a(href="promo.html" target="_blank") promo
+
+							li.intro-page__item
+								a(href="promo-detail.html" target="_blank") promo-detail
+
+							li.intro-page__item
+								a(href="faq.html" target="_blank") faq
+
+							li.intro-page__item
+								a(href="returns.html" target="_blank") returns
+
+							li.intro-page__item
+								a(href="delivery.html" target="_blank") delivery
+
+							li.intro-page__item
+								a(href="how-make-order.html" target="_blank") how-make-order
+
+							li.intro-page__item
+								a(href="cart.html" target="_blank") cart
+
+		include include/script.pug

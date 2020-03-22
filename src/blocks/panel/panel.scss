@@ -1,0 +1,89 @@
+.panel {
+	/* 1 Positioning */
+	position: relative;
+	
+	/* 2 Block model */
+	display: flex;
+}
+.panel__item {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 37px;
+	height: 37px;
+	margin-left: 12px;
+
+	/* 4 Visual */
+	background-color: #DDCBAB;
+	border-radius: 50%;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.panel__item:first-child {
+	/* 2 Block model */
+	margin-left: 0;
+}
+.panel__item--brown {
+	/* 4 Visual */
+	background-color: #4E4E4E;
+}
+.panel__item--yellow {
+	/* 4 Visual */
+	background-color: #F2C52F;
+}
+.panel__item:hover {
+	/* 4 Visual */
+	cursor: pointer;
+}
+.panel__cart span {
+	/* 1 Positioning */
+	position: absolute;
+	top: -8px;
+	right: -10px;
+
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 17px;
+	height: 17px;
+
+	/* 3 Typography */
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 12px;	
+
+	/* 4 Visual */
+	background-color: #C4C4C4;
+	border: 2px solid #FFFFFF;
+	border-radius: 50%;
+}
+.panel__summ {
+	/* 2 Block model */
+	margin-left: 9px;
+	padding-top: 3px;
+
+	/* 3 Typography */
+	font-size: 12px;
+	line-height: 12px;	
+}
+.panel__summ div {
+	/* 2 Block model */
+	padding-top: 5px;
+
+	/* 3 Typography */
+	font-size: 16px;
+	font-weight: bold
+}
+
+.panel__user:hover .userbar {
+	/* 2 Block model */
+	display: block;
+}
+
+@import 'panel--mobile';

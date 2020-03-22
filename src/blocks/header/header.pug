@@ -1,0 +1,29 @@
+header.header
+	div.container
+		div.header__menu-mobile
+			include ../menu-mobile/menu-mobile.pug
+
+		div.header__top
+			div.header__hamburger
+				include ../hamburger/hamburger.pug
+				+hamburger()(id="hamburger")
+				
+			include ../logo/logo.pug
+
+			div.header__site-name Интернет магазин по продаже часов Starry
+
+			div.header__contacts
+				a.header__link.header__mail(href="mailto:info@info.ru")
+					img(src="images/icon--email-small.png" alt="icon email")
+					span info@info.ru
+
+				a.header__link.header__tel(href="tel:88005556033")
+					img(src="images/icon--phone.png" alt="icon phone")
+					span 8 (800) 
+						b 555-60-33
+
+			div.header__panel
+				include ../panel/panel.pug
+
+		div.header__bottom
+			include ../menu/menu.pug

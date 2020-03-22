@@ -1,0 +1,35 @@
+mixin product(data)
+	div.product
+		div.product__info
+			if data.label
+				div.product__label(class=data.label_class)!=data.label
+			
+			if data.wishlist
+				a.product__wishlist(href="#")
+
+		a.product__img(href="product.html")
+			img(src="images/"+data.img alt=data.title)
+
+		a.product__title(href="product.html")!=data.title
+
+		ul.product__parametrs
+			each val, index in data.parametrs
+				li= index 
+					span= val
+
+		div.product__old-price
+			span Обычная цена:
+			b!=data.old_price
+
+		div.product__price
+			span Цена сейчас:
+			b!=data.price
+
+		div.product__bottom
+			div
+				a.product__buy(href="product.html")
+					img(src="images/icon--cart.png" alt="buy")
+					span купить
+
+			div
+				a.product__one-click(href="#") Заказать <br>в 1 клик

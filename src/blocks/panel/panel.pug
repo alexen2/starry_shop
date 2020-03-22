@@ -1,0 +1,18 @@
+div.panel
+	a.panel__item(href="#")
+		img(src="images/icon--star.png" alt="icon")
+
+	div.panel__item.panel__item--brown.panel__user
+		img(src="images/icon--man.png" alt="icon")
+			
+		include ../userbar/userbar.pug
+
+	a.panel__item.panel__item--yellow.panel__cart(href="#")
+		img(src="images/icon--cart.png" alt="icon")
+		span 5
+
+	div.panel__summ
+		|Сумма:
+		div
+			|1500
+			img(src="images/icon--rubl.png" alt="icon")

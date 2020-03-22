@@ -1,0 +1,28 @@
+.h2 {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 23px;
+	font-weight: bold;
+	line-height: 25px;
+	color: #3a3a3a;
+	letter-spacing: 0.4px;
+}
+.h2--big {
+	/* 3 Typography */
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 0.4px;
+
+	@media(min-width: 768px) {
+		/* 3 Typography */
+		font-size: 30px;
+		line-height: 36px;
+	}
+}
+.h2 span {
+	/* 3 Typography */
+	color: #7e9978;	
+}

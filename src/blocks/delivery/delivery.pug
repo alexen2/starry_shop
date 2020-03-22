@@ -1,0 +1,86 @@
+div.delivery
+	div.delivery__title
+		h2.h3 Вы можете оформить заказ
+
+	div.delivery__row.delivery__circles
+		div
+			+circle({
+				icon: 'icon--big-hand.png',
+				body: `					
+					<p>На сайте starry-watch.Магазин <br>
+					Переходите <a href="#">в каталог</a> и выбирайте нужный товар</p>
+				`
+			})
+
+		div
+			+circle({
+				icon: 'icon--big-phone.png',
+				body: `
+					<p>По телефону <b>8 800 555 60 33</b></p>
+					<p>Скажите менеджеру, какой товар хотите заказать, оформит доставку</p>
+				`
+			})
+
+	div.delivery__title
+		h2.h3 Доступные способы оплаты
+		p Оплата за товар производится только после доставки
+
+	div.delivery__row.delivery__pay
+		div
+			+icon-text({
+				icon: 'icon--big-man.png',
+				body: `					
+					<h3>Оплата наличкой курьеру</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla</p>
+				`
+			})
+
+		div
+			+icon-text({
+				icon: 'icon--big-box.png',
+				body: `					
+					<h3>Оплата наличкой в пункте самовывоза траспортной компании</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla</p>
+				`
+			})
+
+		div
+			+icon-text({
+				icon: 'icon--big-card.png',
+				body: `					
+					<h3>Оплата картой</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla</p>
+				`
+			})
+
+	div.delivery__title
+		h2.h3 Доступные способы доставки
+
+	div.delivery__row.delivery__items
+		div.delivery__item
+			div
+				img(src="images/pochta.png" alt="")
+
+			div
+				h3 Почта России
+
+				p Стоимость от 200 руб., зависит от города доставки
+					br
+					|Доставка до почтового отделения.
+					br
+					|Бесплатная при заказе от 2000 рублей.
+
+		div.delivery__item
+			div
+				img(src="images/how-delivery-works__img2.png" alt="")
+
+			div
+				h3 Доставка транспортными компаниями
+
+				p Доставляем компаниями СДЭК, ПЭК
+					br
+					|Стоимость от 200 руб., зависит от города доставки
+					br
+					|Бесплатная при заказе от 2000 рублей.
+					br
+					|Доставка до пунктов выдачи траспортной компании или до квартиры

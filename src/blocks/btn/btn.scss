@@ -1,0 +1,73 @@
+.btn {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 34px 11px 34px;
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+	color: #dcbf49;
+	text-decoration: none;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	/* 4 Visual */
+	cursor: pointer;
+	user-select: none;
+	background: none;
+	border: 2px solid #dcbf49;
+	border-radius: 24px;
+	outline: none;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		/* IE10+ CSS styles go here */
+		padding: 20px 55px 14px 56px;
+	}
+}
+.btn:hover {
+	/* 3 Typography */
+	color: #ffffff;
+
+	/* 4 Visual */
+	background-color: #dcbf49;
+}
+.btn:focus {
+	/* 4 Visual */
+	background-color: #dcbf49;
+}
+.btn:active {
+	/* 4 Visual */
+	background-color: #dcbf49;
+}
+.btn__text {
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+	color: #dcbf49;
+	text-align: center;
+	letter-spacing: 1px;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.btn:hover .btn__text {
+	/* 3 Typography */
+	color: #ffffff;
+}

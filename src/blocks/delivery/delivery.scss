@@ -1,0 +1,152 @@
+.delivery {
+	/* 1 Positioning */
+
+	/* 2 Block model */
+	padding-top: 32px;
+	padding-bottom: 10px;
+
+	/* 3 Typography */
+	text-align: center;
+
+	/* 4 Visual */
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 58px;
+		padding-bottom: 60px;
+	}
+}
+.delivery__title {
+	/* 2 Block model */
+	padding-bottom: 20px;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding-bottom: 30px;
+	}
+}
+.delivery .h3 {
+	/* 3 Typography */
+	font-size: 16px;
+	line-height: 22px;
+
+	@media(min-width: 768px) {
+		/* 3 Typography */
+		font-size: 22px;
+		line-height: 26px;
+	}
+}
+.delivery__row {
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+.delivery__circles {
+	/* 2 Block model */
+	padding-bottom: 30px;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding-bottom: 56px;
+	}
+}
+.delivery__circles > div {
+	/* 2 Block model */
+	padding-bottom: 10px;
+	box-sizing: border-box;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		width: 50%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+.delivery__pay {
+	/* 2 Block model */
+	padding-bottom: 15px;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding-bottom: 46px;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+.delivery__pay > div {
+	/* 2 Block model */
+	padding-bottom: 30px;
+	box-sizing: border-box;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		width: 33.33333%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+.delivery__items {
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+.delivery__item {
+	/* 2 Block model */
+	display: flex;
+	box-sizing: border-box;
+	padding: 38px 25px 20px 25px;
+	margin-bottom: 20px;
+
+	/* 4 Visual */
+	border: 1px solid #e8e8e8;
+	border-radius: 10px;
+	text-align: left;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+		min-height: 340px;
+		width: 50%;
+		margin-left: 38px;
+		margin-right: 38px;
+	}
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		min-height: 230px;
+	}
+	@media(min-width: 1200px) {
+		/* 2 Block model */
+		min-height: 190px;
+	}
+}
+.delivery .icon-text__body p {
+	/* 3 Typography */
+	color: #999999;
+}
+.delivery__item h3 {
+	/* 2 Block model */
+	margin-top: 0;
+	margin-bottom: 3px;
+
+	/* 3 Typography */
+	font-size: 19px;
+	line-height: 23px;
+}
+.delivery__item p {
+	/* 3 Typography */
+	font-size: 14px;
+	line-height: 18px;
+}
+.delivery__item > div {
+	/* 2 Block model */
+	padding-right: 15px;
+}

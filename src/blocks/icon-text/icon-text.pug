@@ -1,0 +1,10 @@
+mixin icon-text(data)
+	div.icon-text(class!=attributes.class)
+		if data.icon
+			div.icon-text__icon
+				img(src="images/"+data.icon alt="")
+
+		if data.icon_number
+			div.icon-text__number!=data.icon_number
+
+		div.icon-text__body!=data.body

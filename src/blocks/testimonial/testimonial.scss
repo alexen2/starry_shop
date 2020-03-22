@@ -1,0 +1,92 @@
+.testimonial {
+	/* 2 Block model */
+	padding: 25px 35px;
+	/* margin: 0 30px; */
+
+	/* 3 Typography */
+
+	/* 4 Visual */
+	border-radius: 8px;
+	background-color: #f7f6f9;
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		padding: 28px 36px;
+	}
+}
+.testimonial__quote {
+	/* 1 Positioning */
+	position: absolute;
+	top: 26px;
+	left: -7px;
+
+	/* 2 Block model */
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 28px;
+	height: 28px;
+
+	/* 3 Typography */
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 10px;
+	color: #ffffff;
+
+	/* 4 Visual */
+	background-color: #a6c19c;
+	border-radius: 50%;
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+}
+.testimonial__title {
+	/* 1 Positioning */
+
+	/* 2 Block model */
+	margin-bottom: 12px;
+
+	/* 3 Typography */
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #a6c19c;
+
+	/* 4 Visual */
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 15px;
+	}
+}
+.testimonial__text {
+	/* 1 Positioning */
+
+	/* 2 Block model */
+
+	/* 3 Typography */
+	font-size: 13px;
+	line-height: 20px;
+	color: #202020;
+
+	/* 4 Visual */
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+
+	@media(min-width: 992px) {
+		/* 3 Typography */
+		font-size: 15px;
+		line-height: 22px;
+	}
+}

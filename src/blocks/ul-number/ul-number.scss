@@ -1,0 +1,63 @@
+.ul-number {
+	/* 1 Positioning */
+
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 3 Typography */
+
+	/* 4 Visual */
+	counter-reset: section;
+	list-style: none;
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+}
+.ul-number li {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	min-height: 28px;
+	margin-bottom: 10px;
+	padding-left: 35px;
+
+	/* 3 Typography */
+
+	/* 4 Visual */
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+}
+.ul-number li:before {
+	/* 1 Positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	/* 2 Block model */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 28px;
+	height: 28px;
+
+	/* 3 Typography */
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 15px;
+	color: #ffffff;
+
+	/* 4 Visual */
+	counter-increment: section;
+	content: counter(section);
+	background-color: #a6c19c;
+	border-radius: 50%;
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+}

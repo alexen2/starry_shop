@@ -1,0 +1,298 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Home - Starry Shop')
+
+	body
+		include ../blocks/mixins.pug
+
+		div.wrapper
+			include ../blocks/header/header.pug
+			
+			div.container.container--sm-no-gutters
+				include ../blocks/slider-top/slider-top.pug
+				
+				include ../blocks/stock-list/stock-list.pug
+
+			div.container
+				div.catalog
+					div.catalog__header
+						h2.h2 Хиты продаж
+
+					div.catalog__list
+						div.catalog__item
+							+product({
+								label: 'Популярные',
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								label: 'Хит',
+								label_class: 'product__label--green',
+								wishlist: true,
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+					div.center
+						+btn({text: 'Показать еще'})
+
+				div.catalog
+					div.catalog__header
+						h2.h2 Новинки
+
+					div.catalog__list
+						div.catalog__item
+							+product({
+								label: 'Популярные',
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								label: 'Хит',
+								label_class: 'product__label--green',
+								wishlist: true,
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+					div.center
+						+btn({text: 'Показать еще'})
+
+				div.catalog
+					div.catalog__header
+						h2.h2 Все модели часов
+						p.sub-title Starry Flower Diamond
+
+					div.catalog__list
+						div.catalog__item.catalog__item--small-bottom-margin
+							+product-feature({text: 'Минеральное закаленное ударостойкое стекло'})
+
+						div.catalog__item.catalog__item--small-bottom-margin
+							+product-feature({text: 'Кварцевый японский механизм'})
+
+						div.catalog__item.catalog__item--small-bottom-margin
+							+product-feature({text: 'Корпус из авиационного сплава'})
+
+						div.catalog__item
+							+product-feature({text: 'Минеральное закаленное ударостойкое стекло'})
+
+						div.catalog__item
+							+product({
+								label: 'Популярные',
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								label: 'Хит',
+								label_class: 'product__label--green',
+								wishlist: true,
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+					div.center
+						+btn({text: 'Показать еще'})
+
+				div.catalog
+					div.catalog__header
+						p.sub-title Starry Sky Premium
+
+					div.catalog__list
+						div.catalog__item.catalog__item--small-bottom-margin
+							+product-feature({text: 'Минеральное закаленное ударостойкое стекло'})
+
+						div.catalog__item.catalog__item--small-bottom-margin
+							+product-feature({text: 'Кварцевый японский механизм'})
+
+						div.catalog__item.catalog__item--small-bottom-margin
+							+product-feature({text: 'Корпус из авиационного сплава'})
+
+						div.catalog__item
+							+product-feature({text: 'Минеральное закаленное ударостойкое стекло'})
+
+						div.catalog__item
+							+product({
+								label: 'Популярные',
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								label: 'Хит',
+								label_class: 'product__label--green',
+								wishlist: true,
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+						div.catalog__item
+							+product({
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500',
+								price: '65 500'
+							})
+
+					div.center
+						+btn({text: 'Показать еще'})
+
+			div.container.container--sm-no-gutters
+				include ../blocks/get-coupon/get-coupon.pug
+
+			div.container
+				h2.h2.h2--big.center Что вы получаете заказывая у нас
+
+				include ../blocks/store-features/store-features.pug
+
+				h2.h2.h2--big.center У нас только честные реальные отзывы
+
+				div.wrapper-testimonials
+					include ../blocks/slider-testimonial/slider-testimonial.pug
+
+			div.container.container--sm-no-gutters
+				include ../blocks/how-delivery-works/how-delivery-works.pug
+
+			div.container
+				h2.h2.h2--big.center Как сделать заказ
+
+				include ../blocks/how-make-order/how-make-order.pug
+
+				h2.h2.h2--big.center Смотрите сертификаты на продукцию
+				p.st.center Продаем официально
+
+				include ../blocks/documents/documents.pug
+
+			div.container.container--sm-no-gutters
+				include ../blocks/get-consultation/get-consultation.pug
+	
+			include ../blocks/footer/footer.pug
+
+		include include/script.pug

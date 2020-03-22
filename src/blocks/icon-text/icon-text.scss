@@ -1,0 +1,48 @@
+.icon-text {
+	/* 1 Positioning */
+
+	/* 2 Block model */
+
+	/* 3 Typography */
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+
+	/* 4 Visual */
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+}
+.icon-text__icon {
+	/* 2 Block model */
+	height: 96px;
+	padding-bottom: 12px;
+}
+.icon-text h3 {
+	/* 2 Block model */
+	margin-top: 0;
+	margin-bottom: 5px;
+
+	/* 3 Typography */
+	font-size: 18px;
+  line-height: 22px;
+}
+.icon-text p {
+	/* 2 Block model */
+	margin-bottom: 12px;
+}
+.icon-text p:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.icon-text__number {
+	/* 2 Block model */
+	padding-bottom: 10px;
+	
+	/* 3 Typography */
+	font-size: 66px;
+	font-weight: bold;
+	line-height: 66px;
+	color: #fcd232;
+}

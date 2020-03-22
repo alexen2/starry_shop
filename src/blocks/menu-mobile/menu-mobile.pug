@@ -1,0 +1,40 @@
+div.menu-mobile
+	div.menu-mobile__body
+		div.container
+			div.menu-mobile__top
+				+hamburger()(id="hamburger_open" class="is-active")
+
+			nav
+				ul
+					li
+						a(href="#") каталог
+					li
+						a(href="#") Как заказать
+					li
+						a(href="#") Оплата и доставка
+					li
+						a(href="#") Отзывы
+					li
+						a(href="#") Вопрос-ответ
+					li
+						a(href="#") О магазине
+					li
+						a(href="#") Контакты
+
+		div.menu-mobile__cart
+			include ../panel/panel--mobile.pug
+
+		div.container.center
+			div
+				a.menu-mobile__phone(href="tel:88005556033") 
+					img(src="images/icon--phone-white2.png" alt="")
+					span 8 (800) 555-60-33
+
+			a.menu-mobile__mail(href="mailto:zakaz@mail.ru") zakaz@mail.ru
+
+			p.menu-mobile__desc Прием заказов круглосуточно
+				br
+				|Интернет магазин по продаже часов Starry
+
+			div.menu-mobile__logo
+				include ../logo/logo.pug

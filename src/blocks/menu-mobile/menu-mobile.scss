@@ -1,0 +1,101 @@
+.menu-mobile {
+	/* 2 Block model */
+	display: block;	
+}
+.menu-mobile__body {
+	/* 2 Block model */
+	height: 100vh;	
+
+	/* 4 Visual */
+	overflow-y: scroll;
+}
+.menu-mobile__top {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	height: 37px;
+	padding: 18px 0;
+}
+.menu-mobile .hamburger--spin.is-active .hamburger-inner,
+.menu-mobile .hamburger--spin.is-active .hamburger-inner::after,
+.menu-mobile .hamburger-inner,
+.menu-mobile .hamburger-inner::before,
+.menu-mobile .hamburger-inner::after {
+	/* 4 Visual */
+	background-color: #ffffff;
+}
+.menu-mobile nav {
+	/* 2 Block model */
+	padding-top: 7px;
+	padding-bottom: 2px;
+}
+.menu-mobile ul {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.menu-mobile li {
+	/* 2 Block model */
+	padding-bottom: 17px;
+
+	/* 3 Typography */
+	text-align: center;
+}
+.menu-mobile nav a {
+	/* 3 Typography */
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #ffffff;
+}
+.menu-mobile__cart {
+	/* 2 Block model */
+	padding-top: 30px;
+	padding-bottom: 35px;
+	margin-bottom: 26px;
+
+	/* 4 Visual */
+	background-color: #6c8367;
+}
+.menu-mobile__phone {
+	/* 3 Typography */
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 22px;
+	text-decoration: none;
+	color: #ffffff;
+}
+.menu-mobile__phone img {
+	/* 2 Block model */
+	display: inline-block;
+	margin-right: 10px;
+}
+.menu-mobile__mail {
+	/* 2 Block model */
+	display: inline-block;
+	margin-top: 8px;
+	margin-bottom: 12px;
+
+	/* 3 Typography */
+	color: #ffffff;
+}
+.menu-mobile__desc {
+	/* 2 Block model */
+	margin-bottom: 20px;
+
+	/* 3 Typography */
+	font-size: 18px;
+	line-height: 22px;
+	color: #374f32;
+}
+.menu-mobile__logo .logo {
+	/* 2 Block model */
+	display: inline-block;
+	margin-bottom: 40px;
+}

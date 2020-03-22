@@ -1,0 +1,85 @@
+.promo-detail {
+	/* 1 Positioning */
+
+	/* 2 Block model */
+	padding-bottom: 15px;
+
+	/* 3 Typography */
+
+	/* 4 Visual */
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding-bottom: 40px;
+	}
+}
+.promo-detail__list {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+	padding-top: 30px;
+	padding-bottom: 14px;
+
+	/* 4 Visual */
+	list-style: none;
+
+	@media(min-width: 1200px) {
+		/* 2 Block model */
+		padding-bottom: 10px;
+	}
+}
+.promo-detail__list li {
+	@media(min-width: 1200px) {
+		/* 2 Block model */
+		padding-bottom: 4px;
+	}
+}
+.promo-detail__body {
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		display: flex;
+	}
+}
+.promo-detail__img {
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		width: 50%;
+		flex: 0 0 50%;
+		box-sizing: border-box;
+		padding-right: 20px;
+	}
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		padding-right: 36px;
+	}
+	@media(min-width: 1200px) {
+		/* 2 Block model */
+		width: 46%;
+		flex: 0 0 46%;
+	}
+}
+.promo-detail__img img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.promo-detail__text .text {
+	/* 2 Block model */
+	margin-bottom: 15px;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

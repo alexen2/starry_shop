@@ -1,0 +1,81 @@
+.panel--mobile {
+	/* 2 Block model */
+	justify-content: center;
+}
+.panel--mobile .panel__item {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 2;
+
+	/* 4 Visual */
+	border: 6px solid #ffffff;
+}
+.panel--mobile .panel__item::before {
+	/* 1 Positioning */
+	position: absolute;
+	top: -13px;
+	right: -15px;
+	z-index: 1;
+
+	/* 2 Block model */
+	display: block;
+	width: 33px;
+	height: 33px;
+
+	/* 4 Visual */
+	background-color: #ffffff;
+	border-radius: 50%;
+	content: '';
+}
+.panel--mobile .panel__item::after {
+	/* 1 Positioning */
+	position: absolute;
+	z-index: 2;
+
+	/* 2 Block model */
+	display: block;
+	width: 37px;
+	height: 37px;
+
+	/* 4 Visual */
+	content: '';
+	background-color: #fdd432;
+	border-radius: 50%;
+	background-image: url(../images/icon--cart.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.panel--mobile .panel__cart span {
+	/* 1 Positioning */
+	z-index: 3;
+
+	/* 3 Typography */
+	color: #000000;
+}
+.panel--mobile .panel__summ {
+	/* 2 Block model */
+	margin-left: 16px;
+
+	/* 3 Typography */
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+.panel--mobile .panel__summ div {
+	/* 2 Block model */
+	padding-top: 7px;
+	font-size: 24px;
+  color: #ffffff;
+
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

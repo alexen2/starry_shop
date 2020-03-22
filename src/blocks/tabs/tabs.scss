@@ -1,0 +1,129 @@
+.tabs {
+	/* 1 Positioning */
+
+	/* 2 Block model */
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	/* 3 Typography */
+
+	/* 4 Visual */
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		display: flex;
+		align-items: flex-start;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+.tabs__menu {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+	background-color: #a6c19c;
+	border-radius: 10px;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		width: 186px;
+		flex: 0 0 186px;
+		margin-right: 50px;
+	}
+}
+.tabs__menu a {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: block;
+	padding: 16px 0;
+
+	/* 3 Typography */
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 19px;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.tabs__menu a:hover {
+	/* 4 Visual */
+	opacity: 0.7;
+}
+.tabs__menu a.tabs__menu-active {
+	/* 4 Visual */
+	background-color: #6e9061;
+}
+.tabs__menu a.tabs__menu-active:hover {
+	/* 4 Visual */
+	opacity: 1;
+}
+.tabs__menu a.tabs__menu-active::before {
+	/* 1 Positioning */
+	position: absolute;
+	top: 20px;
+	right: -14px;
+
+	/* 2 Block model */
+	display: block;
+
+	/* 4 Visual */
+	border: 7px solid transparent; 
+	border-left: 7px solid #6e9061;
+
+	@media(min-width: 768px) {
+		/* 4 Visual */
+		content: "";
+	}
+}
+.tabs__menu li:first-child a {
+	/* 4 Visual */
+	border-radius: 10px 10px 0 0;
+} 
+.tabs__menu li:last-child a {
+	/* 4 Visual */
+	border-radius: 0 0 10px 10px;
+} 
+.tabs__body {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+	flex-grow: 2;
+
+	/* 4 Visual */
+	list-style: none;
+
+	@media(max-width: 767px) {
+		/* 2 Block model */
+		padding-top: 35px;
+	}
+}
+.tabs__body > li {
+	/* 2 Block model */
+	display: none;
+}
+.tabs__body > li.tabs__body-active {
+	/* 2 Block model */
+	display: block;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

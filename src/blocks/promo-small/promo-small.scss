@@ -1,0 +1,86 @@
+.promo-small {
+	/* 1 Positioning */
+
+	/* 2 Block model */
+	padding-bottom: 15px;
+
+	/* 3 Typography */
+	text-align: center;
+
+	/* 4 Visual */
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		padding-bottom: 40px;
+	}
+}
+.promo-small__img {
+	/* 2 Block model */
+	padding-bottom: 15px;
+}
+.promo-small__img img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+}
+.promo-small__title {
+	/* 2 Block model */
+	margin: 0;
+	padding-bottom: 8px;
+}
+.promo-small__title {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+}
+.promo-small__desc {
+	/* 2 Block model */
+	padding-bottom: 20px;
+
+	/* 3 Typography */
+	font-size: 14px;
+	line-height: 18px;
+	color: #5f5f5f;
+}
+.promo-small__btn {
+	/* 2 Block model */
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	padding: 0 25px;
+
+	/* 3 Typography */
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+
+	/* 4 Visual */
+	border-radius: 8px;
+	background: #ffd633;
+	background: -moz-linear-gradient(top,  #ffd633 0%, #e8b72c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffd633 0%,#e8b72c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffd633 0%,#e8b72c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd633', endColorstr='#e8b72c',GradientType=0 ); /* IE6-9 */ 
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.promo-small__btn:hover {
+	/* 4 Visual */
+	border-radius: 5px;
+	background: #ffe400;
+	background: -moz-linear-gradient(top,  #ffe400 0%, #e8d42c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffe400 0%,#e8d42c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffe400 0%,#e8d42c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe400', endColorstr='#e8d42c',GradientType=0 ); /* IE6-9 */ 
+}
