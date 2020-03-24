@@ -15,7 +15,9 @@
 @import '../blocks/select/select';
 @import '../blocks/radio/radio';
 @import '../blocks/circle/circle';
+@import '../blocks/cart-item/cart-item';
 @import '../blocks/icon-text/icon-text';
+@import '../blocks/quantity/quantity';
 
 // Atom-blocks
 
@@ -45,12 +47,15 @@
 @import '../blocks/soc-icons/soc-icons';
 @import '../blocks/store-feature/store-feature';
 @import '../blocks/stock-list/stock-list';
+@import '../blocks/total/total';
 
 // Main Blocks
 
 @import '../blocks/header/header';
 @import '../blocks/footer/footer';
 @import '../blocks/main/main';
+@import '../blocks/form-promocode/form-promocode';
+@import '../blocks/form-order/form-order';
 @import '../blocks/tabs/tabs';
 @import '../blocks/accordion/accordion';
 @import '../blocks/promo/promo';
@@ -66,3 +71,4 @@
 @import '../blocks/get-coupon/get-coupon';
 @import '../blocks/how-make-order-list/how-make-order-list';
 @import '../blocks/delivery/delivery';
+@import '../blocks/cart/cart';

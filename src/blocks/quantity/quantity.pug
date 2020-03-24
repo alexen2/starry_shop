@@ -1,0 +1,12 @@
+mixin quantity(data)
+	div.quantity(class!=attributes.class)
+		div.quantity__body
+			div.quantity-button.quantity-down
+				span -
+			
+			input(type="number" min="1" max="1000" step="1" value="1")
+			
+			div.quantity-button.quantity-up
+				span +
+
+		div.quantity__footer 2750Р шт.

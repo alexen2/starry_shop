@@ -1,0 +1,30 @@
+mixin cart-item(data)
+	div.cart-item
+		div.cart-item__img
+			a(href="#")
+				img(src="images/cart-item__img.png" alt="")
+
+		div.cart-item__body
+			div.cart-item__left
+				a.cart-item__title(href="#")
+					h2.h3 Наручные часы Starry Flower Diamond
+
+				if data.cart
+					div.cart-item__edit
+						a.cart-item__star(href="#")
+							img(src="images/icon--star-orange.png" alt="")
+
+						a.cart-item__del(href="#")
+							img(src="images/icon--del.png" alt="")
+
+						+quantity({})
+
+				if data.order
+					div.cart-item__order Колличество: 2 шт.
+
+			div.cart-item__right
+				div.cart-item__price
+					div.cart-item__price-new 65 500 ₽
+					div.cart-item__price-old 55 500 ₽
+
+				div.cart-item__sale Скидка 1849 ₽

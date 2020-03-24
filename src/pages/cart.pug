@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
 	include include/head.pug
-	+head('Как сделать заказ')
+	+head('Корзина')
 
 	body
 		include ../blocks/mixins.pug
@@ -17,71 +17,63 @@ html(lang="en")
 					]
 				})
 
-				h1.h2 Смотрите способы как сделать заказ в магазине
+				h1.h2 Корзина
 
-				ul.how-make-order-list
-					li.how-make-order-list__item
-						+icon-text({
-							icon_number: '1.',
-							body: `					
-								<h3>Сделать заказ на сайте</h3>
-								<p>Смотрите инструкцию на видео</p>
-								<br>
-								<img src="images/video.png" alt="">
-							`
-						})
+				include ../blocks/cart/cart.pug
 
-					li.how-make-order-list__item
-						+icon-text({
-							icon_number: '2.',
-							body: `					
-								<h3>Заказать по телефону</h3>
-								<p>Вы можете оставить свой заказ продиктовав оператору номера товаров нужных часов</p>
-								<p>Оператор посмотрит наличие, примет заказ, оформит доставку по нужному адресу</p>
-							`
-						})
+				div.catalog
+					div.catalog__header
+						h2.h2 Рекомендуем добавить к покупке
 
-					li.how-make-order-list__item
-						+icon-text({
-							icon_number: '3.',
-							body: `					
-								<h3>Заказать написав письмо на электронную почту</h3>
-								<p>Вы можете написать письмо на нашу электронную почту zakaz@mail.ru</p>
+					div.catalog__list
+						div.catalog__item
+							+product({
+								label: 'Популярные',
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500 ₽',
+								price: '65 500 ₽'
+							})
 
-								<p><b>В письме указываете:</b><br>
-								1. Полные ФИО<br>
-								2. Полный адрес доставки<br>
-								3. Контактный телефон<br>
-								4. Номера товаров или ссылки на страницы, которые хотите заказать</p>
-							`
-						})
+						div.catalog__item
+							+product({
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500 ₽',
+								price: '65 500 ₽'
+							})
 
-					li.how-make-order-list__item
-						+icon-text({
-							icon_number: '4.',
-							body: `					
-								<h3>Сделать заказ на сайте</h3>
-								Вы можете написать письмо на нашу электронную почту zakaz@mail.ru</p>
+						div.catalog__item
+							+product({
+								label: 'Хит',
+								label_class: 'product__label--green',
+								wishlist: true,
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500 ₽',
+								price: '65 500 ₽'
+							})
 
-								<p><b>В письме указываете:</b><br>
-								1. Полные ФИО<br>
-								2. Полный адрес доставки<br>
-								3. Контактный телефон<br>
-								4. Номера товаров или ссылки на страницы, которые хотите заказать</p>
-							`
-						})
-
-					li.how-make-order-list__item
-						+icon-text({
-							icon_number: '5.',
-							body: `					
-								<h3>Заказ через форму обратной связи</h3>
-								<p>Смотрите инструкцию в видео</p>
-								<br>
-								<img src="images/video.png" alt="">
-							`
-						})
-						
+						div.catalog__item
+							+product({
+								img: 'product__img.jpg',
+								title: 'Наручные часы StarryFlower <br>Diamond',
+								parametrs: {
+									'Цвет: ': 'Золотой'
+								},
+								old_price: '75 500 ₽',
+								price: '65 500 ₽'
+							})
+	
 			div.container.container--sm-no-gutters
 				include ../blocks/get-consultation/get-consultation.pug
 	

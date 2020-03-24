@@ -1,0 +1,17 @@
+div.cart
+	div.cart__body
+		div.cart__list
+			div.cart__item
+				+cart-item({cart: true})
+
+			div.cart__item
+				+cart-item({cart: true})
+
+			div.cart__item
+				+cart-item({cart: true})
+
+		div.cart__code
+			include ../form-promocode/form-promocode.pug
+
+	div.cart__sidebar
+		include ../total/total.pug
