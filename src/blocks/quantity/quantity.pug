@@ -9,4 +9,5 @@ mixin quantity(data)
 			div.quantity-button.quantity-up
 				span +
 
-		div.quantity__footer 2750Р шт.
+		if data.price
+			div.quantity__footer 2750Р шт.

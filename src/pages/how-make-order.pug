@@ -8,82 +8,83 @@ html(lang="en")
 
 		div.wrapper
 			include ../blocks/header/header.pug
-			
-			div.container
-				+breadcrumbs({
-					items: [
-						'Главная',
-						'Наручные часы Starry Flower Diamond'
-					]
-				})
 
-				h1.h2 Смотрите способы как сделать заказ в магазине
+			page-container
+				div.container
+					+breadcrumbs({
+						items: [
+							'Главная',
+							'Наручные часы Starry Flower Diamond'
+						]
+					})
 
-				ul.how-make-order-list
-					li.how-make-order-list__item
-						+icon-text({
-							icon_number: '1.',
-							body: `					
-								<h3>Сделать заказ на сайте</h3>
-								<p>Смотрите инструкцию на видео</p>
-								<br>
-								<img src="images/video.png" alt="">
-							`
-						})
+					h1.h2 Смотрите способы как сделать заказ в магазине
 
-					li.how-make-order-list__item
-						+icon-text({
-							icon_number: '2.',
-							body: `					
-								<h3>Заказать по телефону</h3>
-								<p>Вы можете оставить свой заказ продиктовав оператору номера товаров нужных часов</p>
-								<p>Оператор посмотрит наличие, примет заказ, оформит доставку по нужному адресу</p>
-							`
-						})
+					ul.how-make-order-list
+						li.how-make-order-list__item
+							+icon-text({
+								icon_number: '1.',
+								body: `
+									<h3>Сделать заказ на сайте</h3>
+									<p>Смотрите инструкцию на видео</p>
+									<br>
+									<img src="images/video.png" alt="">
+								`
+							})
 
-					li.how-make-order-list__item
-						+icon-text({
-							icon_number: '3.',
-							body: `					
-								<h3>Заказать написав письмо на электронную почту</h3>
-								<p>Вы можете написать письмо на нашу электронную почту zakaz@mail.ru</p>
+						li.how-make-order-list__item
+							+icon-text({
+								icon_number: '2.',
+								body: `
+									<h3>Заказать по телефону</h3>
+									<p>Вы можете оставить свой заказ продиктовав оператору номера товаров нужных часов</p>
+									<p>Оператор посмотрит наличие, примет заказ, оформит доставку по нужному адресу</p>
+								`
+							})
 
-								<p><b>В письме указываете:</b><br>
-								1. Полные ФИО<br>
-								2. Полный адрес доставки<br>
-								3. Контактный телефон<br>
-								4. Номера товаров или ссылки на страницы, которые хотите заказать</p>
-							`
-						})
+						li.how-make-order-list__item
+							+icon-text({
+								icon_number: '3.',
+								body: `
+									<h3>Заказать написав письмо на электронную почту</h3>
+									<p>Вы можете написать письмо на нашу электронную почту zakaz@mail.ru</p>
 
-					li.how-make-order-list__item
-						+icon-text({
-							icon_number: '4.',
-							body: `					
-								<h3>Сделать заказ на сайте</h3>
-								Вы можете написать письмо на нашу электронную почту zakaz@mail.ru</p>
+									<p><b>В письме указываете:</b><br>
+									1. Полные ФИО<br>
+									2. Полный адрес доставки<br>
+									3. Контактный телефон<br>
+									4. Номера товаров или ссылки на страницы, которые хотите заказать</p>
+								`
+							})
 
-								<p><b>В письме указываете:</b><br>
-								1. Полные ФИО<br>
-								2. Полный адрес доставки<br>
-								3. Контактный телефон<br>
-								4. Номера товаров или ссылки на страницы, которые хотите заказать</p>
-							`
-						})
+						li.how-make-order-list__item
+							+icon-text({
+								icon_number: '4.',
+								body: `					
+									<h3>Сделать заказ на сайте</h3>
+									Вы можете написать письмо на нашу электронную почту zakaz@mail.ru</p>
 
-					li.how-make-order-list__item
-						+icon-text({
-							icon_number: '5.',
-							body: `					
-								<h3>Заказ через форму обратной связи</h3>
-								<p>Смотрите инструкцию в видео</p>
-								<br>
-								<img src="images/video.png" alt="">
-							`
-						})
-						
-			div.container.container--sm-no-gutters
-				include ../blocks/get-consultation/get-consultation.pug
+									<p><b>В письме указываете:</b><br>
+									1. Полные ФИО<br>
+									2. Полный адрес доставки<br>
+									3. Контактный телефон<br>
+									4. Номера товаров или ссылки на страницы, которые хотите заказать</p>
+								`
+							})
+
+						li.how-make-order-list__item
+							+icon-text({
+								icon_number: '5.',
+								body: `					
+									<h3>Заказ через форму обратной связи</h3>
+									<p>Смотрите инструкцию в видео</p>
+									<br>
+									<img src="images/video.png" alt="">
+								`
+							})
+							
+				div.container.container--sm-no-gutters
+					include ../blocks/get-consultation/get-consultation.pug
 	
 			include ../blocks/footer/footer.pug
 

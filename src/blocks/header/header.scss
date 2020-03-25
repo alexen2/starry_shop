@@ -1,3 +1,20 @@
+.header {
+	/* 1 Positioning */
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+
+	/* 4 Visual */
+	background-color: #ffffff;
+}
+.scrolled .header {
+	/* 4 Visual */
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.2);
+	-moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 50, 0.2);
+	box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.2);
+}
 .header__top {
 	/* 2 Block model */
 	display: flex;

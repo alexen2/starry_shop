@@ -17,7 +17,7 @@ mixin cart-item(data)
 						a.cart-item__del(href="#")
 							img(src="images/icon--del.png" alt="")
 
-						+quantity({})
+						+quantity({price: true})
 
 				if data.order
 					div.cart-item__order Колличество: 2 шт.

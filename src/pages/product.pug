@@ -1,0 +1,75 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Корзина')
+
+	body
+		include ../blocks/mixins.pug
+
+		div.wrapper
+			include ../blocks/header/header.pug
+
+			page-container
+				div.container
+					+breadcrumbs({
+						items: [
+							'Главная',
+							'Наручные часы Starry Flower Diamond'
+						]
+					})
+
+					include ../blocks/product-page/product-page.pug
+
+					include ../blocks/get-coupon/get-coupon.pug
+
+					ul.product-page-features
+						li
+							+product-feature2({
+								icon: 'product-feature2__icon1.png',
+								title: 'Механизм',
+								text: 'Японский <br>Кварцевый <br>Не требует подзаводасов'
+							})
+
+						li
+							+product-feature2({
+								icon: 'product-feature2__icon2.png',
+								title: 'Стекло',
+								text: 'Ударопрочное <br>Минеральное <br>сверхгладкое'
+							})
+
+						li
+							+product-feature2({
+								icon: 'product-feature2__icon3.png',
+								title: 'Цвета',
+								text: 'Франиузский синий <br>Роскошное золото <br> Магический пурпурный <br>Благородноесеребро'
+							})
+
+						li
+							+product-feature2({
+								icon: 'product-feature2__icon4.png',
+								title: 'Ремешок',
+								text: 'Изяшное миланское <br>плетение из стальных <br>«нитей». 16x220 мм'
+							})
+
+						li
+							+product-feature2({
+								icon: 'product-feature2__icon5.png',
+								title: 'Корпус',
+								text: 'Прочный <br>авиационный сплав <br>Диаметр 34 мм'
+							})
+
+						li
+							+product-feature2({
+								icon: 'product-feature2__icon6.png',
+								title: 'Застежка',
+								text: 'Прочная магнитная <br>Фиксируется <br>за 1 секунду'
+							})
+
+					include ../blocks/tabs/tabs--2.pug
+
+				div.container.container--sm-no-gutters
+					include ../blocks/get-consultation/get-consultation.pug
+	
+			include ../blocks/footer/footer.pug
+
+		include include/script.pug

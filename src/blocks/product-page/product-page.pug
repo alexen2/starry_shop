@@ -1,0 +1,60 @@
+div.product-page
+	div.product-page__title
+		h1.h2 Наручные часы Starry Flower Diamond
+		p.product-page__vendor-code Артикул: 135591137
+
+	div.product-page__body
+		div.product-page__img
+			img(src="images/product-page__img.jpg" alt="")
+
+		div.product-page__info
+			div.product-page__prod-info
+				div.product-page__price-old Обычная цена: 
+					b 75 500 ₽
+				div.product-page__price Цена сейчас: 
+					b 65 500 ₽
+
+				div.product-page__colors
+					h3.h3 Выберите цвет: 
+
+					a.red(href="#") &nbsp;
+					a.orange(href="#") &nbsp;
+					a.blue(href="#") &nbsp;
+					a.green(href="#") &nbsp;
+
+				div.product-page__quantity
+					+quantity({}) 
+
+					div
+						h3.h3 Наличие:
+						p в наличии
+
+				div.product-page__actions
+					a.product-page__buy(href="#")
+						img(src="images/icon--cart.png" alt="")
+						span купить
+
+					a.product-page__one-click(href="#") Заказать  <br>в 1 клик
+
+			div.product-page__shop-info
+				div.product-page__delivery
+					h3.h3 Доставка:
+					p По Москве: 350 р. на следующий день					
+					p По России: 250-350 руб., 3-7 дней
+					div При заказе от 5000 руб. доставка бесплатная. Точную стоимость доставки уточняйте у менеджера
+
+				ul.product-page__feature
+					li
+						div
+							img(src="images/product-page__feature1.png" alt="")
+						span Оплата после доставки
+
+					li
+						div
+							img(src="images/product-page__feature2.png" alt="")
+						span При покупке от 2х штук скидка
+
+					li
+						div
+							img(src="images/product-page__feature3.png" alt="")
+						span Гарантия 1 год

@@ -24,7 +24,7 @@ jQuery(document).ready(function() {
 		var $this = $(this),
 			 	st = $this.scrollTop();
 
-		if(st > 285){
+		if(st > 1){
 			$('.wrapper').addClass('scrolled');
 		}else{
 			$('.wrapper').removeClass('scrolled');

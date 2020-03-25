@@ -28,16 +28,10 @@
 	transition: all 0.4s;
 }
 .menu__item a:hover {
-	/* 4 Visual */
-	opacity: 0.7;
-	border-bottom: 3px solid #000000;
+	/* 3 Typography */
+	color: #a6c19c;
 }
 .menu__item--active a {
 	/* 3 Typography */
 	color: #a6c19c;
-}
-.menu__item--active a:hover {
-	/* 4 Visual */
-	opacity: 1;
-	border-bottom: 3px solid #d5ddd3;
 }

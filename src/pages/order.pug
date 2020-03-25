@@ -8,37 +8,38 @@ html(lang="en")
 
 		div.wrapper
 			include ../blocks/header/header.pug
-			
-			div.container
-				+breadcrumbs({
-					items: [
-						'Главная',
-						'Наручные часы Starry Flower Diamond'
-					]
-				})
 
-				h1.h2 Оформление заказа
+			page-container
+				div.container
+					+breadcrumbs({
+						items: [
+							'Главная',
+							'Наручные часы Starry Flower Diamond'
+						]
+					})
 
-				div.cart
-					div.cart__body
-						div.cart__list
-							div.cart__item
-								+cart-item({order: true})
+					h1.h2 Оформление заказа
 
-							div.cart__item
-								+cart-item({order: true})
+					div.cart
+						div.cart__body
+							div.cart__list
+								div.cart__item
+									+cart-item({order: true})
 
-							div.cart__item
-								+cart-item({order: true})
+								div.cart__item
+									+cart-item({order: true})
 
-						div.cart__code
-							include ../blocks/form-order/form-order.pug
+								div.cart__item
+									+cart-item({order: true})
 
-					div.cart__sidebar
-						include ../blocks/total/total--order.pug
+							div.cart__code
+								include ../blocks/form-order/form-order.pug
 
-			div.container.container--sm-no-gutters
-				include ../blocks/get-consultation/get-consultation.pug
+						div.cart__sidebar
+							include ../blocks/total/total--order.pug
+
+				div.container.container--sm-no-gutters
+					include ../blocks/get-consultation/get-consultation.pug
 	
 			include ../blocks/footer/footer.pug
 

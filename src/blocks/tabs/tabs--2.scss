@@ -1,0 +1,126 @@
+.tabs--2 {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: block;
+	margin-bottom: 30px;
+
+	/* 3 Typography */
+
+	/* 4 Visual */
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+}
+.tabs--2 .tabs__menu {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 2;
+
+	/* 2 Block model */
+	width: 100%;
+	padding-bottom: 7px;
+
+	/* 3 Typography */
+
+	/* 4 Visual */
+	background: none;
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding-bottom: 0;
+		margin-bottom: -1px;
+	}
+}
+.tabs--2 .tabs__menu a {
+	/* 2 Block model */
+	padding: 7px 0;
+
+	/* 3 Typography */
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #a6c19c;
+	text-decoration: underline;
+
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		padding: 15px 35px;
+	}
+}
+.tabs--2 .tabs__menu a:hover {
+	/* 3 Typography */
+	text-decoration: none;
+}
+.tabs--2 .tabs__menu a.tabs__menu-active {
+	/* 3 Typography */
+	color: #696969;
+	text-decoration: none;
+
+	/* 4 Visual */
+	background: none;
+
+	@media(min-width: 992px) {
+		/* 4 Visual */
+		border: 1px solid #e3e8e9;
+		border-bottom: none;
+		border-radius: 8px 8px 0 0;
+		background-color: #ffffff;
+	}
+}
+.tabs--2 .tabs__menu a.tabs__menu-active::before {
+	/* 4 Visual */
+	content: none;
+}
+.tabs--2 .tabs__body {
+	/* 2 Block model */
+	padding-top: 0;
+}
+.tabs--2 .tabs__body li {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 1;
+
+	/* 2 Block model */
+	box-sizing: border-box;
+	padding: 20px;
+
+	/* 3 Typography */
+
+	/* 4 Visual */
+	border: 1px solid #e3e8e9;
+	border-radius: 8px;
+
+	/* 5 Animation */
+
+	/* 6 Misc */
+
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		padding: 32px;
+
+		/* 4 Visual */		
+		border-radius: 0;
+	}
+}
+.tabs--2 .tabs__body p {
+	/* 2 Block model */
+	margin-bottom: 21px;
+
+	/* 3 Typography */
+	font-size: 15px;
+	line-height: 19px;
+}
+.tabs--2 .tabs__body p:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}

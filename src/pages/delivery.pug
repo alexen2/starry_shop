@@ -8,21 +8,22 @@ html(lang="en")
 
 		div.wrapper
 			include ../blocks/header/header.pug
-			
-			div.container
-				+breadcrumbs({
-					items: [
-						'Главная',
-						'Наручные часы Starry Flower Diamond'
-					]
-				})
 
-				h1.h2 Какие способы оплаты и доставки есть в магазине
+			page-container
+				div.container
+					+breadcrumbs({
+						items: [
+							'Главная',
+							'Наручные часы Starry Flower Diamond'
+						]
+					})
 
-				include ../blocks/delivery/delivery.pug
+					h1.h2 Какие способы оплаты и доставки есть в магазине
 
-			div.container.container--sm-no-gutters
-				include ../blocks/get-consultation/get-consultation.pug
+					include ../blocks/delivery/delivery.pug
+
+				div.container.container--sm-no-gutters
+					include ../blocks/get-consultation/get-consultation.pug
 	
 			include ../blocks/footer/footer.pug
 
