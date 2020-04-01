@@ -1,5 +1,12 @@
 mixin store-feature(data)
 	div.store-feature
-		img(src="images/"+data.img alt="")
-		h3.h3.store-feature__title!=data.title
+		if data.img
+			img(src="images/"+data.img alt="")
+
+		if data.number
+			div.store-feature__number!=data.number
+
+		if data.title
+			h3.h3.store-feature__title!=data.title
+
 		p.store-feature__text!=data.text

@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Контакты')
+
+	body
+		include ../blocks/mixins.pug
+
+		div.wrapper
+			include ../blocks/header/header.pug
+
+			page-container
+				div.container
+					+breadcrumbs({
+						items: [
+							'Главная',
+							'Контакты'
+						]
+					})
+
+					h1.h2 Контакты
+					
+					include ../blocks/contacts/contacts.pug
+
+				div.container.container--sm-no-gutters
+					include ../blocks/get-consultation/get-consultation.pug
+	
+			include ../blocks/footer/footer.pug
+
+		include include/script.pug

@@ -1,0 +1,77 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('About')
+
+	body
+		include ../blocks/mixins.pug
+
+		div.wrapper
+			include ../blocks/header/header.pug
+
+			page-container
+				div.container
+					+breadcrumbs({
+						items: [
+							'Главная',
+							'Наручные часы Starry Flower Diamond'
+						]
+					})
+
+					h1.h2 Информация о нашем магазине
+					
+					div.page
+						p.text В каталогах нашего магазина представлены только трендовые часы.
+							br
+							|Часы поставляем непосредственно от производителя.
+
+					include ../blocks/store-about-features/store-about-features.pug
+
+					div.h2.h2--big.center 6 причин почему у нас покупают
+
+					div.store-features
+						div.store-features__item
+							+store-feature({
+								number: 1,
+								text: 'Доставляем прямо до квартиры. Не несете никаких рисков, оплата после проверки часов'
+							})
+
+						div.store-features__item
+							+store-feature({
+								number: 2,
+								text: 'Мы продаем только модные часы коллекций  2019-2020 годов'
+							})
+
+						div.store-features__item
+							+store-feature({
+								number: 3,
+								text: 'Официально возим часы в Россию и страны СНГ.'
+							})
+
+						div.store-features__item
+							+store-feature({
+								number: 4,
+								text: 'При покупке от 2х штук бесплатно доставки дадаим скидку от 30% процентов'
+							})
+
+						div.store-features__item
+							+store-feature({
+								number: 5,
+								text: 'Гарантируем обмен и возврат по любой причине в течение 14 дней Просто звоните и высылаете'
+							})
+
+						div.store-features__item
+							+store-feature({
+								number: 6,
+								text: 'Гарантия на механизм часов 1 год Что-то случается без лишних вопросов возвращаем либо высылаем новые'
+							})
+
+				div.container.container--sm-no-gutters
+					include ../blocks/requisites/requisites.pug
+
+				div.container.container--sm-no-gutters
+					include ../blocks/get-consultation/get-consultation.pug
+	
+			include ../blocks/footer/footer.pug
+
+		include include/script.pug
