@@ -22,12 +22,20 @@
 }
 .cart-item__img {
 	/* 2 Block model */
+	width: 100%;
+	max-width: 81px;
 	padding-right: 15px;
 
 	@media(min-width: 992px) {
 		/* 2 Block model */
 		padding-right: 20px;
 	}
+}
+.cart-item__img img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+	overflow: hidden;
 }
 .cart-item__body {
 	/* 2 Block model */

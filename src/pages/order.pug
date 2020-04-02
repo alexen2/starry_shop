@@ -20,23 +20,24 @@ html(lang="en")
 
 					h1.h2 Оформление заказа
 
-					div.cart
-						div.cart__body
-							div.cart__list
-								div.cart__item
-									+cart-item({order: true})
+					form
+						div.cart
+							div.cart__body
+								div.cart__list
+									div.cart__item
+										+cart-item({order: true})
 
-								div.cart__item
-									+cart-item({order: true})
+									div.cart__item
+										+cart-item({order: true})
 
-								div.cart__item
-									+cart-item({order: true})
+									div.cart__item
+										+cart-item({order: true})
 
-							div.cart__code
-								include ../blocks/form-order/form-order.pug
+								div.cart__code
+									include ../blocks/form-order/form-order.pug
 
-						div.cart__sidebar
-							include ../blocks/total/total--order.pug
+							div.cart__sidebar
+								include ../blocks/total/total--order.pug
 
 				div.container.container--sm-no-gutters
 					include ../blocks/get-consultation/get-consultation.pug
